@@ -32,11 +32,11 @@ We recommend [Digitalocean](http://digitalocean.com), [Vultr](https://www.vultr.
     $ ./install.sh
 
 Installation take some time, wait until you see message
->**MASTERNODE AND SENTINEL SUCCESSFULLY INSTALLED AND STARTED**.
+>**MASTERNODE AND SENTINEL SUCCESSFULLY INSTALLED AND STARTED**
 
->Also masternode private key will be printed like that
+Also masternode private key will be printed like that
 
->**MASTERNODE PRIVATE KEY: 462VdwnMk3EwcSxN8RoE4W8UoK0SgEtpN3KsIs6oub3W6byHLyvE1k**.
+>**MASTERNODE PRIVATE KEY: 462VdwnMk3EwcSxN8RoE4W8UoK0SgEtpN3KsIs6oub3W6byHLyvE1k**
 
 Save the **your** masternode private key, you will use it later.
 
@@ -44,7 +44,10 @@ Save the **your** masternode private key, you will use it later.
 
 Return to your wallet in your PC. Make sure that your transction to yourself has minimum 15 confirmations. If so then
 - Go to **Tools** -> **Debug console**
-- In text run the following command **masternode outputs**
+- In text run the following command
+ 
+        masternode outputs
+
 - It should print something like that
     >{ **"419f1abe19ck9012c41ac58g1a2eb7e903lEw860e4280f6a383bce93519368Dde": "1"** }
 - The long string is **collateral_output_txid** of your payment and the number is **collateral_output_index**. You will use them shortly.
@@ -58,5 +61,5 @@ Return to your wallet in your PC. Make sure that your transction to yourself has
 - Each data is separated by space, so do not introduce any space yourself. Remember that **collateral_output_txid** and **collateral_output_index** do not contain any quotes.
 - Save and close the config file. 
 - Go to **Settings** -> **Options** (or **celer-qt** -> **Preferences** in macOS) -> **Wallet** and select checkbox **Show Masternodes Tab** and click **OK**. Then restart the wallet.
-- Go to **Masternodes** tab. You should see on **My Masternodes** tab your configured masternode as missing. Click on **Start All**. Now you should see your masternode as **Pre_Enabled** or **Enabled** If so, you are all set. Masternode will start getting rewards immediatly.
+- Go to **Masternodes** tab. You should see on **My Masternodes** tab your configured masternode as missing. Click on **Start All**. Now you should see your masternode as **Pre_Enabled** or **Enabled**. If so, you are all set. Masternode will start getting rewards immediatly.
 
