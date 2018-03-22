@@ -33,8 +33,11 @@ We recommend [Digitalocean](http://digitalocean.com), [Vultr](https://www.vultr.
 
 Installation take some time, wait until you see message
 >**MASTERNODE AND SENTINEL SUCCESSFULLY INSTALLED AND STARTED**.
-Also masternode private key will be printed like that
+
+>Also masternode private key will be printed like that
+
 >**MASTERNODE PRIVATE KEY: 462VdwnMk3EwcSxN8RoE4W8UoK0SgEtpN3KsIs6oub3W6byHLyvE1k**.
+
 Save the **your** masternode private key, you will use it later.
 
 ### 3. Setting masternode config for local wallet
@@ -48,7 +51,9 @@ Return to your wallet in your PC. Make sure that your transction to yourself has
 - Go to **Tools** -> **Open Masternode Configuration File**. It will open masternode.conf file.
 - At the end of file add you data in the next format:
     >**alias VPS_IP:13737 masternodeprivkey collateral_output_txid collateral_output_index**
-    >eg
+    
+    eg from data above
+    
     >**MN1 123.123.123.123:13737 462VdwnMk3EwcSxN8RoE4W8UoK0SgEtpN3KsIs6oub3W6byHLyvE1k 419f1abe19ck9012c41ac58g1a2eb7e903lEw860e4280f6a383bce93519368Dde 1**
 - Each data is separated by space, so do not introduce any space yourself. Remember that **collateral_output_txid** and **collateral_output_index** do not contain any quotes.
 - Save and close the config file. 
