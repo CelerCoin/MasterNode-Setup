@@ -21,7 +21,7 @@ address to address box. Type **1000** for **Amount** box. **Do not select "Subtr
 
 ### 2. Masternode and Sentinel Installation
 
-We recommend [Digitalocean](http://digitalocean.com), [Vultr](https://www.vultr.com) or [Linode](https://www.linode.com) for your VPS and Ubuntu x64 OS. Login onto your VPS server as a **root** and run following commands from console:
+We recommend [Digitalocean](https://www.digitalocean.com), [Vultr](https://www.vultr.com) or [Linode](https://www.linode.com) for your VPS and Ubuntu x64 OS. Login onto your VPS server as a **root** and run following commands from console:
 
     $ apt-get install -y wget
 
@@ -42,15 +42,15 @@ Save the **your** masternode private key, you will use it later.
 
 ### 3. Setting masternode config for local wallet
 
-Return to your wallet in your PC. Make sure that your transction to yourself has minimum 15 confirmations. If so then
+Return to your wallet in your PC. Make sure that your transaction to yourself has minimum 15 confirmations. If so then
 - Go to **Tools** -> **Debug console**
-- In text run the following command
+- In text box paste the following command and press **Enter**
  
         masternode outputs
 
 - It should print something like that
     >{ **"419f1abe19ck9012c41ac58g1a2eb7e903lEw860e4280f6a383bce93519368Dde": "1"** }
-- The long string is **collateral_output_txid** of your payment and the number is **collateral_output_index**. You will use them shortly.
+- The long string is **collateral_output_txid** and the number is **collateral_output_index**. You will use them shortly.
 - Go to **Tools** -> **Open Masternode Configuration File**. It will open masternode.conf file.
 - At the end of file add you data in the next format:
     >**alias VPS_IP:13737 masternodeprivkey collateral_output_txid collateral_output_index**
